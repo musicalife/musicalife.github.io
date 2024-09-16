@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Reproductor de Música</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        .table th, .table td{
+            background-color:tomato;
+            margin-bottom: 20px;
+        }
+
+        .Coleccion-Musica {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            background-image: url(img/salsa.jpeg);
+
+        }
+
+        .Coleccion-Musica img {
+            width: 100px;
+            margin-left: 10px;
+            border-radius: 20px;
+            filter: drop-shadow(0 0 10px rgba(241, 3, 189, 0.384));
+        }
+
+        .Coleccion-Musica h1 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 40px;
+            font-weight: bold;
+            font-size: 120px;
+            filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+            color: black;
+            background-color: rgba(255, 255, 255, 0.11);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="layout">
+        <nav class="navbar navbar-expand-lg" style="background-color:rgba(238, 124, 104, 0.5);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Música</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="inicio()">Incio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="genero()">Género</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="Coleccion-Musica">
+            <img src="img/iconosalsa.jpeg" alt="">
+            <h1>SALSA</h1>
+        </div>
+        <div class="Contenido-Tabla">
+            <div class="color-tabla">
+
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Reproducir</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Artista</th>
+                    </tr>
+                </thead>
+                <tbody class="body-tabla">
+                    <tr>
+                        <th scope="row">
+                            <img src="" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source
+                                    src="musica/Quiero - Hansel y Raúl ft. Milly Quezada y Jocelyn Arias + letras.mp3"
+                                    type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td> QUIERO</td>
+
+                        <td>
+                            HANSEL Y RAUL
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/EL REY DE LA PUNTUALIDAD HECTOR LAVOE.mp3" type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td>EL REY DE LA PUNTUALIDAD</td>
+                        <td>
+                            HECTOR LAVOE
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/Wilson Manyoma - El Preso (Letra).mp3" type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td> EL PRESO</td>
+
+                        <td>
+                            WILSON MANYOMA
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/Quiéreme (letra) mickey tavera.mp3" type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td>QUIEREME</td>
+
+                        <td> MICKEY TAVERA</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/Frankie Ruiz -Esta Cobardía(Letra_Lyrics).mp3" type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td>ESTA COBARDÍA</td>
+
+                        <td>FRANKIE Ruiz</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/Adolescent_s Orquesta - Virgen (Letra Oficial).mp3"
+                                    type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td>VIRGEN</td>
+                        <td>
+                            ADOLESCENT'S
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/Adolescentes - Me Tengo Que Ir     (Letra_Lyric).mp3"
+                                    type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td>
+                            ME TENGO QUE IR
+                        </td>
+                        <td>
+                            ADOLESCENTES
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/La Cita Galy Galiano Letra.mp3" type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td>
+                            LA CITA
+                        </td>
+                        <td>
+                            GALY GALIANO
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <img src="../Downloads/musica.png" alt="" width="50">
+
+                        </th>
+                        <td>
+                            <audio controls>
+                                <source src="musica/Corazon Embustero La grande madrid (LETRA).mp3" type="audio/mp3">
+                                Tu navegador no admite el elemento audio.
+                            </audio>
+                        </td>
+                        <td> CORAZON EMBUSTERO</td>
+                        <td>
+                            LA GRANDE DE MADRID
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <script src="script.js"></script>
+</body>

@@ -1,0 +1,51 @@
+
+.header { grid-area: header;
+  background-color: #fbfbfbf2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+ }
+.main {
+  display: flex;
+  flex-direction:row ;
+  margin-left: 15px;
+   
+
+}
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ 
+
+}
+/*Genero*/
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product {
+  width: 25%; /* Ajusta el ancho de cada producto */
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 150px; /* Ajusta la altura de la imagen */
+  object-fit: cover;
+}
